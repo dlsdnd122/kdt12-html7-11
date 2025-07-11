@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 실습 예제 1 - 간단한 회원가입 폼</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 100vh;
+    "
+  >
+    <form style="display: inline-block">
+      <fieldset
+        style="
+          display: inline-block;
+          padding: 20px;
+          border: 2px solid #888;
+          border-radius: 10px;
+        "
+      >
+        <!-- 아아디 -->
+        <div class="personal information">
+          <label for="id">아이디 : </label>
+          <br />
+          <input
+            type="text"
+            placeholder="아이디를 입력해주세요."
+            name="id"
+            maxlength="10"
+          />
+          <br />
+          <br />
+          <!-- 비밀번호 -->
+          <label for="passward">비밀번호 : </label>
+          <br />
+          <input
+            type="password"
+            placeholder="비밀번호를 입력해주세요."
+            name="password"
+            maxlength="10"
+          />
+          <br />
+          <br />
+          <!-- 이메일 -->
+          <label for="email">이메일 : </label>
+          <br />
+          <input
+            type="email"
+            placeholder="이메일을 입력해주세요."
+            name="email"
+          />
+          <br />
+        </div>
+        <!-- 성별 -->
+        <br />
+        <div class="gender-group">
+          <label for="gender">성별 : </label>
+          <br />
+          <input type="radio" name="gender" id="male" value="male" /><label
+            for="male"
+            >남성</label
+          >
+          <input type="radio" name="gender" id="female" value="female" /><label
+            for="female"
+            for="female"
+            >여성</label
+          >
+          <br />
+        </div>
+        <!-- 약관 동의 -->
+        <br />
+        <div class="terms">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">약관에 동의합니다.</label>
+          <br />
+        </div>
+        <!-- 버튼 -->
+        <div class="button">
+          <br />
+          <button type="submit" style="color: blueviolet">제출하기</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+/*h1 {*/
+/*    color: red;*/
+/*}*/
+
+/*#title {*/
+/*    color: green;*/
+/*}*/
+
+/*.highlight {*/
+/*    color: red;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*a[href] {*/
+/*    color: red;*/
+/*}*/
+
+/*a[target="_blank"] {*/
+/*    color: blue;*/
+/*}*/
+
+/*img[src$=".png"] {*/
+/*    border: 10px solid green;*/
+/*}*/
+
+/*!* 자식 선택자 예시 (>) *!*/
+/*.parent > p {*/
+/*    color: red;*/
+/*}*/
+
+/*!* 하위 선택자 예시 (공백) *!*/
+/*div p {*/
+/*    color: red;*/
+/*}*/
+
+/*인접 형제 선택자*/
+/*A + B : A 요소 바로 다음에 오는 형제 요소 B를 선택*/
+/*h1 + h2{*/
+/*    color: red;*/
+/*}*/
+
+/*일반 형제 선택자 사용*/
+/*h1 ~ h2 {*/
+/*    color: red;*/
+/*}*/
+
+/*링크 가상 클래스 선택자*/
+/*a:link {*/
+/*    !*방문한 적이 없는 링크*!*/
+/*    color: orange;*/
+/*}*/
+
+/*a:visited {*/
+/*    !*한 번이라도 방문한 적이 있는 링크*!*/
+/*    color: green;*/
+/*}*/
+
+/*동적 가상 클래스 선택자 사용 예시*/
+/*button {*/
+/*    padding : 10px 20px;*/
+/*    background-color: #3b82f6;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    !*마우스를 위에 올리면 손가락 모양 커서 나타남*!*/
+/*    transition: background-color 0.3s;*/
+/*    !*백그라운드 색 변경시 0.3초간 부드럽게 에니메이션*!*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: #059669;*/
+/*    !*마우스를 올리면 초록색*!*/
+/*}*/
+
+/*button:active {*/
+/*    background-color: #dc2626;*/
+/*    !*클릭하면 빨간색*!*/
+/*}*/
+
+/*택스트 입력 필드에 포커스가 맞춰지면 테두리가 진해지고 배경색이 연한 회색으로 변환*/
+/*input:focus{*/
+/*    border: 2px solid;*/
+/*    background-color: #f2f2f2;*/
+/*}*/
+/*!*체크박스에 체크하면 해당 체크박스와 연결된 라벨의 글자 색상이 녹색으로 바뀜*!*/
+/*input[type="checkbox"]:checked + label {*/
+/*    color: green;*/
+/*    font-weight: bold;*/
+/*}*/
+/*!*버튼이 비활성화 되어 있을 때 배경색이 회색으로 변함*!*/
+/*button:disabled{*/
+/*    background-color: #ccc;*/
+/*    cursor: not-allowed; !* 마우스 올렸을 때 금지 표시*!*/
+/*}*/
+/*!*버튼이 활성화되어 있을 때 배경색이 녹색으로 글자 색상은 흰색으로 변경!*!*/
+/*button:enabled {*/
+/*    background-color: #4caf50;*/
+/*    color: white;*/
+/*}*/
+
+/*.parent{*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.child{*/
+/*    font-size: 2em;*/
+/*}*/
+
+/*.child-to-child{*/
+/*    font-size: 2em;*/
+/*}*/
+
+/*rem = root em, html 요소의 font-size를 기준으로 함*/
+/*html{*/
+/*    font-size: 16px;*/
+/*}*/
+/*.parent {*/
+/*    font-size: 1rem;*/
+/*}*/
+/*.child {*/
+/*    font-size: 2rem;*/
+/*}*/
+/*.child-to-child {*/
+/*    font-size: 3rem;*/
+/*}*/
+
+/*vewport*/
+/*.parent{*/
+/*    font-size: 1vw;*/
+/*}*/
+/*.child{*/
+/*    font-size: 2vw;*/
+/*}*/
+
+/*.first {*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/*.second {*/
+/*    margin-top: 30px;*/
+/*}*/
+
