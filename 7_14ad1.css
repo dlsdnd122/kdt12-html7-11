@@ -25,6 +25,8 @@ body {
 }
 
 .badge {
+    font-family: system-ui;
+    /*위 명령어를 써주면 폰트가 위로 뜨는 현상을 막을 수 있다.*/
     position: absolute;
     top: 12px;
     right: 12px;
