@@ -204,25 +204,33 @@
 // textarea 다루기
 // document.getElementById("myTextArea").value = "설정된 값";
 
-// 라디오 버튼 다루기
-const form = document.getElementById('fruitForm');
-// 특정 html 요소(여기서는 form)에 이벤트 핸들러(이벤트가 발생했을 때 실행할 함수)를 등록하는 메서드
-form.addEventListener('submit', function (e) {
-    // 브라우저의 기본 이벤트 동작을 막아주는 함수
-    // <form>요소에서 submit 버튼을 클릭하면 자동으로 페이지가 새로고침되면서 폼 데이터를 서버로 전송한다.
-    e.preventDefault(); // 폼 제출로 인한 새로고침 방지
+// // 라디오 버튼 다루기
+// const form = document.getElementById('fruitForm');
+// // 특정 html 요소(여기서는 form)에 이벤트 핸들러(이벤트가 발생했을 때 실행할 함수)를 등록하는 메서드
+// form.addEventListener('submit', function (e) {
+//     // 브라우저의 기본 이벤트 동작을 막아주는 함수
+//     // <form>요소에서 submit 버튼을 클릭하면 자동으로 페이지가 새로고침되면서 폼 데이터를 서버로 전송한다.
+//     e.preventDefault(); // 폼 제출로 인한 새로고침 방지
+//
+//     // input : <input> 태그를 의미
+//     // [name="fruits"] : name 속성이 "fruits"인 요소를 찾으라는 뜻
+//     // :checked : 체크된 상태(사용자가 선택한 상태)인 요소를 의미
+//     const selected = document.querySelector('input[name="fruits"]:checked');
+//     if (selected) {
+//         console.log("선택한 과일 : ", selected.value);
+//     } else {
+//         console.log("선택한 과일이 없습니다.");
+//     }
+// });
 
-    // input : <input> 태그를 의미
-    // [name="fruits"] : name 속성이 "fruits"인 요소를 찾으라는 뜻
-    // :checked : 체크된 상태(사용자가 선택한 상태)인 요소를 의미
-    const selected = document.querySelector('input[name="fruits"]:checked');
-    if (selected) {
-        console.log("선택한 과일 : ", selected.value);
-    } else {
-        console.log("선택한 과일이 없습니다.");
-    }
-})
-
-
-
+// 콤보 박스(select) 다루기
+// 현재 선택된 값
+const seletValue =
+    document.querySelector('select').value;
+// 선택된 옵션의 리스트
+const selectText =
+    document.querySelector('select').options[
+        document.querySelector('select').selectedIndex
+        ].text;
+console.log(selectText);
 
