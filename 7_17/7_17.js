@@ -243,12 +243,17 @@
 //     // 다른 예외 처리 작업 수행
 // }
 
-//finally 블록 사용
-try {
-    throw new Error("Error Message")    // 예외 발생 가능한 코드
-} catch (error) {
-    console.error('Error occurred : ', error.message);
-} finally {
-    console.log('Finally block execured!');
-}
+// //finally 블록 사용
+// try {
+//     throw new Error("Error Message")    // 예외 발생 가능한 코드
+// } catch (error) {
+//     console.error('Error occurred : ', error.message);
+// } finally {
+//     console.log('Finally block execured!');
+// }
 
+// console.log('A');
+// setTimeout(() => {
+//     console.log('B')
+// },0);
+// console.log('C')
