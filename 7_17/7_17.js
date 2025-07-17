@@ -143,28 +143,112 @@
 // // 3초 대기 중에 이런 코드도 실행 가능
 // console.log("이 코드는 3초 대기하는 동안 즉시 실행됩니다!")
 
-// Ajax 기본 사용법
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://api.example.com/data', true);
-// method : HTTP 요청 메서드 (GET, POST 등)
-// url : 요청할 url 주소
-// async : 비동기 여부 (true : 비동기. false : 동기)
-xhr.onload = function () {
-    if (xhr.status === 200) {
-        // 요청이 성공적으로 완료된 경우
-        console.log(xhr.responseText); // 응답 데이터
-    } else {
-        // 요청이 실패한 경우
-        console.error('Error : ', xhr.status);
-    }
-};
-
-xhr.onerror = function () {
-    //네트워크 에러 발생한 경우
-    console.error('Network Error');
-};
-
-xhr.send();
+// // Ajax 기본 사용법
+// const xhr = new XMLHttpRequest();
+// xhr.open('GET', 'https://api.example.com/data', true);
+// // method : HTTP 요청 메서드 (GET, POST 등)
+// // url : 요청할 url 주소
+// // async : 비동기 여부 (true : 비동기. false : 동기)
+// xhr.onload = function () {
+//     if (xhr.status === 200) {
+//         // 요청이 성공적으로 완료된 경우
+//         console.log(xhr.responseText); // 응답 데이터
+//     } else {
+//         // 요청이 실패한 경우
+//         console.error('Error : ', xhr.status);
+//     }
+// };
+// xhr.onerror = function () {
+//     //네트워크 에러 발생한 경우
+//     console.error('Network Error');
+// };
+// xhr.send();
 
 
+// // TypeError 와 SyntaxError 예외 처리
+// // TypeError 예외 처리
+// try {
+//     const notAFunction = 123;
+//     notAFunction(); // 숫자는 함수가 아님 - 타입에러 발생
+// } catch (error) {
+//     if (error instanceof TypeError) {
+//         console.error('TypeError occurred : ', error.message);
+//     } else {
+//         throw error;    // 다른 타입의 에러는 다시 던짐
+//     }
+// }
+//
+// // SyntaxError 예외 처리
+// try {
+//     eval('function () {console.log("Hello")}'); // 문법 오류 : 함수 이름 없음
+// } catch (error) {
+//     if (error instanceof SyntaxError) {
+//         console.error('SyntaxError occurred : ', error.message);
+//     } else {
+//         throw error;
+//     }
+// }
+
+
+// // ReferenceError와 RangeError 예외처리
+// // ReferenceError 예외처리
+// try {
+//     const result = somefunction(); // 정의되지 않은 함수 호출
+// } catch (error) {
+//     if (error instanceof ReferenceError) {
+//         console.error('TypeError occurred : ', error.message);
+//     } else {
+//         throw error;
+//     }
+// }
+// // RangeError 예외처리
+// try {
+//     let arr = new Array(-5); // 음수는 유효하지 않은 배열 길이
+// } catch (error) {
+//     if (error instanceof RangeError) {
+//         console.error("범위를 벗어난 값입니다 : ", error.message);
+//     } else {
+//         throw error;
+//     }
+// }
+
+// // Error 객체 생성과 비동기 함수 예외 처리
+// // Error 객체 생성과 예외처리
+// try {
+//     throw new Error('Custom error message1');
+// } catch (error) {
+//     console.error('Error occurred : ', error.message);
+// }
+// // 비동기 함수에서 예외 처리
+// async function fetchData() {
+//     try {
+//         const response = await fetch('https://api.example.com/data');
+//         const data = await response.json();
+//         console.log('Data : ', data);
+//     } catch (error) {
+//         console.error('Error occurred : ', error.message);
+//     }
+// }
+// fetchData();
+//
+// // 예외 전파
+// function someFunction() {
+//     throw new Error('Custom error message2');
+// }
+//
+// try {
+//     someFunction();
+// } catch (error) {
+//     console.error('Error occurred : ', error.message);
+//     // 다른 예외 처리 작업 수행
+// }
+
+//finally 블록 사용
+try {
+    throw new Error("Error Message")    // 예외 발생 가능한 코드
+} catch (error) {
+    console.error('Error occurred : ', error.message);
+} finally {
+    console.log('Finally block execured!');
+}
 
