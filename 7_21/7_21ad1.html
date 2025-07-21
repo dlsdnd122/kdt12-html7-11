@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="7_21ad1.css">
+</head>
+<body>
+<!--Navbar (로고 + 메뉴) -->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Jeong In Wonng</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item ms">
+                <a class="nav-link" href="#">Introduce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--카드 -->
+<div class="d-flex justify-content-center card-container">
+    <!--카드1-->
+    <div class="card " style="width: 18rem;">
+        <img src="/cat.png" class="card-img-top" alt="고양이">
+        <div class="card-body">
+            <h5 class="card-title">고양이</h5>
+            <p class="card-text">야옹 야옹야옹 야옹</p>
+            <a href="#" class="btn btn-primary">자세히 보기</a>
+        </div>
+    </div>
+    <!--카드2-->
+    <div class="card" style="width: 18rem;">
+        <img src="/cat.png" class="card-img-top" alt="고양이">
+        <div class="card-body">
+            <h5 class="card-title">고양이</h5>
+            <p class="card-text">야옹 야옹야옹 야옹</p>
+            <a href="#" class="btn btn-primary">자세히 보기</a>
+        </div>
+    </div>
+    <!--카드3-->
+    <div class="card" style="width: 18rem;">
+        <img src="/cat.png" class="card-img-top" alt="고양이">
+        <div class="card-body">
+            <h5 class="card-title">고양이</h5>
+            <p class="card-text">야옹 야옹야옹 야옹</p>
+            <a href="#" class="btn btn-primary">자세히 보기</a>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<!--연락하기 폼-->
+<form>
+    <h3>연락하기</h3>
+    <div>이름</div>
+    <input type="text" placeholder="이름 입력">
+    <div>이메일</div>
+    <input type="text" placeholder="you@example.com">
+    <div>메시지</div>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="전하고 싶은 말을 입력하세요."></textarea>
+    <br>
+    <button type="button">보내기</button>
+</form>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="7_21ad1.js"></script>
+</body>
+</html>
